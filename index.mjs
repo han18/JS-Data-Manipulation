@@ -8,14 +8,16 @@ const n4 = 5;
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
 const isSum50 = n1 + n2 + n3 + n4 == 50;
+console.log(isSum50); // "true" all values calculate to 50
 
-const divBy5 = isSum50 / 5;
-console.log(divBy5);
+const sum50 = n1 + n2 + n3 + n4;
+console.log(`all the numbers are equal to ${sum50} `);
 
-console.log(n1 / 5); //divisible by 5
-console.log(n2 / 5); //divisible by 5
-console.log(n3 / 5); //divisible by 5
-console.log(n4 / 5); //divisible by 5
+console.log(n1 % 5); //divisible by 5
+console.log(n2 % 5); //divisible by 5
+console.log(n3 % 5); //divisible by 5
+console.log(n4 % 5); //divisible by 5
+console.log(`all the numbers are ${isSum50} and divisible by 5 `);
 
 // console.log(isSum50); // this operation is true
 
@@ -25,11 +27,11 @@ console.log(n4 / 5); //divisible by 5
 // arithmetic to count the total number of odd numbers.
 const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
 
-console.log(isTwoOdd);
-console.log(n1 % 2); // not an odd number
-console.log(n2 % 2); // is an od number
-console.log(n3 % 2); // not an odd number
-console.log(n4 % 2); // is an odd number
+console.log(isTwoOdd); //true
+console.log(n1 % 2); // true
+console.log(n2 % 2); // true
+console.log(n3 % 2); // true
+console.log(n4 % 2); // true
 
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
@@ -49,6 +51,12 @@ console.log(n3 < 25); // true 25 is larger than n3
 const isUnique =
   n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4;
 
+console.log(isUnique); //true
+console.log(n1 != n2); //true
+console.log(n1 != n3); //true
+console.log(n1 != n4); //true
+true;
+
 // Here, we put the results into a single variable
 // for convenience. Note how we negate isOver25 using
 // the ! operator. We could also have tested for
@@ -57,3 +65,21 @@ const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
 
 // Finally, log the results.
 console.log(isValid);
+
+// road trip gas calculation
+
+let miles = 1500;
+let millesPer = 30;
+let fuel = 175;
+let perGallon = 3;
+
+//How many gallons of fuel will you need for the entire trip?
+
+console.log(miles * perGallon);
+
+let milesPerHour = miles / 60; //25
+let perGallonCost = milesPerHour * perGallon;
+console.log(perGallonCost); //you will need 75 gallons
+console.log(milesPerHour);
+
+//Will your budget be enough to cover the fuel expense?
