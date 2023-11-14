@@ -29,14 +29,18 @@ console.log(isTwoOdd);
 console.log(n1 % 2); // not an odd number
 console.log(n2 % 2); // is an od number
 console.log(n3 % 2); // not an odd number
-console.log(n4 % 2);
+console.log(n4 % 2); // is an odd number
 
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
 // if ANY of the numbers is larger than 25.
 const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
-
 console.log(isOver25);
+console.log(n1 > 25); //  not larger than 25
+console.log(n2 > 25); // not larger than 25
+console.log(n3 > 25); // not larger than 25
+console.log(n4 > 25); // false
+console.log(n3 < 25); // true 25 is larger than n3
 
 // Check four: all unique numbers
 // This is long, and there are more efficient
