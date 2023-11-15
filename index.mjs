@@ -55,7 +55,12 @@ console.log(isUnique); //true
 console.log(n1 != n2); //true
 console.log(n1 != n3); //true
 console.log(n1 != n4); //true
-true;
+
+if (n1 != n2) {
+  console.log("this is a true statement");
+} else if (n1 != n3) {
+  console.log("this is a true statement");
+}
 
 // Here, we put the results into a single variable
 // for convenience. Note how we negate isOver25 using
@@ -66,20 +71,30 @@ const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
 // Finally, log the results.
 console.log(isValid);
 
-// road trip gas calculation
+// Practical Math road trip gas calculation
 
 let miles = 1500;
-let millesPer = 30;
 let fuel = 175;
 let perGallon = 3;
 
 //How many gallons of fuel will you need for the entire trip?
+console.log(miles / 55); // 27.28
+console.log(miles / 60); // 25
+console.log(miles / 75); // 20
 
-console.log(miles * perGallon);
-
-let milesPerHour = miles / 60; //25
-let perGallonCost = milesPerHour * perGallon;
-console.log(perGallonCost); //you will need 75 gallons
-console.log(milesPerHour);
+// let perGallonCost = milesPerHour * perGallon;
+// console.log(perGallonCost); //you will need 75 gallons
+// console.log(milesPerHour);
 
 //Will your budget be enough to cover the fuel expense?
+const per55 = 55; // best budget
+const per60 = 60;
+const per75 = 75;
+
+console.log(per55 * 3);
+console.log(per60 * 3);
+console.log(per75 * 3);
+
+// How long will the trip take, in hours?
+let milesPerHour = miles / 60;
+console.log(milesPerHour); // 25 hours
